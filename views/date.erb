@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+</head>
+
+<body>
+    <h1>
+    <% year_string = Date.today.year.to_s %>
+    <% month_string = Date::MONTHNAMES[Date.today.month]%>
+    <% day_string = Date::DAYNAMES[Date.today.wday]%>
+    <% binding.pry %>
+    <%="The date is #{day_string}, #{month_string} #{Date.today.day}, #{year_string}"%>
+    </h1>
+</body>
+
+</html>
